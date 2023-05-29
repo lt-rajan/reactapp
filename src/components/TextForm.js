@@ -20,8 +20,7 @@ export default function TextForm(props) {
     }
 
   return (  
-    <>
-    <Navbar title={'HOME'}/>
+    <>    
     <div>
         <h1>{props.heading}</h1>
         <div className="mb-3">        
