@@ -48,7 +48,7 @@ export class NewsScroll extends Component {
     render() {
         return (
             <>
-                <h1 className='text-center my-4'>News - Top {this.capitaliazeFirstLetter(this.props.cetegory)} Headlines</h1>
+                <h1 className='text-center ' style={{marginTop:"80px"}}>News - Top {this.capitaliazeFirstLetter(this.props.cetegory)} Headlines</h1>
                 <InfiniteScroll
                     dataLength={this.state.articles.length}
                     next={this.fetchMoreData}

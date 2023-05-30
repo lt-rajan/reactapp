@@ -3,7 +3,8 @@ import {BrowserRouter,Route,Router,Routes,} from "react-router-dom";
 import About from './components/About';
 import TextForm from './components/TextForm';
 import Home from './components/Home';
-import NewsScroll from './news components/NewsScroll';
+// import NewsScroll from './news components/NewsScroll';
+import NewsScroll from './news function components/NewsScroll';
 import Navbar from './components/Navbar';
 
 
@@ -12,7 +13,7 @@ function App() {
     <>
       
 <BrowserRouter>
-<Navbar title={"HOME"}/>
+<Navbar title={"HOME"} name={"rajan"}/>
 <Routes>
   <Route exact path="/" element={<Home/>} />
   <Route exact path="/textform/*" element={<TextForm />} />

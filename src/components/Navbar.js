@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar(prorps) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">{prorps.title}</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +51,6 @@ export default function Navbar(prorps) {
 Navbar.propTypes = {
   name: PropTypes.string
 }
-Navbar.defaultProps = {
-  name: 'textform'
-}
+// Navbar.defaultProps = {
+//   name: 'textform'
+// }
